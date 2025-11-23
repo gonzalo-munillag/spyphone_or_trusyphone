@@ -1,0 +1,185 @@
+# SpyPhone Investigation - Docker Ignore
+
+# ============================================
+# Investigation Data (Keep out of container)
+# ============================================
+
+# Blog post (not needed in container)
+BLOG_POST.md
+
+# All captured data (mount as volumes instead)
+data/
+logs/
+captures/
+reports/
+
+# Frida logs
+frida_logs/
+*.frida.log
+
+# Network captures
+*.pcap
+*.pcapng
+*.cap
+
+# Analysis results
+results/
+analysis/
+findings/
+
+# Screenshots and evidence
+screenshots/
+evidence/
+
+# ============================================
+# Git
+# ============================================
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+
+# ============================================
+# Documentation (not needed at runtime)
+# ============================================
+README.md
+LICENSE
+*.md
+docs/
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments (don't copy into container)
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ============================================
+# Node.js
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ============================================
+# macOS
+# ============================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# ============================================
+# IDEs and Editors
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+*.sublime-workspace
+*.sublime-project
+
+# ============================================
+# Temporary Files
+# ============================================
+temp/
+tmp/
+*.tmp
+*.bak
+*.backup
+
+# ============================================
+# Environment Files (use secrets management)
+# ============================================
+.env
+.env.local
+.env.*.local
+
+# ============================================
+# SSL Certificates
+# ============================================
+*.pem
+*.key
+*.crt
+*.cer
+
+# ============================================
+# Device-Specific Files
+# ============================================
+device_info.json
+installed_apps.txt
+permissions_dump.txt
+
+# ============================================
+# Research Notes
+# ============================================
+notes/
+research/
+drafts/
+
+# ============================================
+# Compressed Archives
+# ============================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# Backups
+# ============================================
+backup/
+
+# ============================================
+# CI/CD
+# ============================================
+.github/
+.gitlab-ci.yml
+.travis.yml
+azure-pipelines.yml
+
+# ============================================
+# Docker Files (don't nest)
+# ============================================
+.dockerignore
+
